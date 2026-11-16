@@ -16,7 +16,7 @@ public class SatelliteResourceTest {
         .when()
                 .get("/v1/satellites")
         .then()
-                .statusCode(200)
+                .statusCode(300)
                 .contentType("application/json")
                 .body("items.size()", is(2))
                 .body("items.noradId", containsInAnyOrder(25544, 20580))
